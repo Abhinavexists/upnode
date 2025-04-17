@@ -22,6 +22,8 @@
     "packages/*"
   ],
   "dependencies": {
-    "prisma": "^6.5.0"
+    "framer-motion": "^12.7.4",
+    "prisma": "^6.5.0",
+    "react-intersection-observer": "^9.16.0"
   }
 }

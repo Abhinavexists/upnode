@@ -4,7 +4,6 @@ import "./globals.css";
 import {
   ClerkProvider
 } from '@clerk/nextjs'
-import { Appbar } from "../components/Appbar";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
@@ -33,8 +32,7 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <ThemeProvider defaultTheme="dark" attribute="class" forcedTheme="dark">
-            <Appbar />
+          <ThemeProvider defaultTheme="dark" attribute="class">
             {children}
           </ThemeProvider>
         </body>
